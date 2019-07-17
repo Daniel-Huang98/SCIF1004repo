@@ -1,0 +1,21 @@
+
+.button{
+    margin: auto auto;
+    background-color: white;
+    opacity: 0.3;
+    border-radius: 20%;
+    text-align: center;
+    border-style: hidden;
+}
+
+.button:hover{
+    opacity: 0.5;
+    color: grey;
+}
+
+
+.button img{
+    width: 100%;
+    border-radius: 50%;
+    border-style: hidden;
+}
