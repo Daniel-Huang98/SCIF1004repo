@@ -9,7 +9,7 @@ class Scrubber extends React.Component{
         return(
             <div id="Scrubber">
                 <Button start={1} end={2} image={require('./../Images/LeftArrow.png')}/>
-                <Tile caption={"Someshit"} meme={require("./../Images/logo.svg")} discussion={text}/>
+                <Tile caption={"Fomites"} meme={require("./../Images/logo.svg")} discussion={text}/>
                 <Button start={3} end={4} image={require('./../Images/RightArrow.png')}/>
             </div>
         );

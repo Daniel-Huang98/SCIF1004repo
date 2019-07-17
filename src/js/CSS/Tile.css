@@ -3,6 +3,7 @@ img{
     height: 60%;
     width: 60%;
     border-style: solid;
+    border-radius: 20px;
 }
 
 p{ 
