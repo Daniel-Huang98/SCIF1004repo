@@ -15,7 +15,7 @@ class App extends Component{
       this.state = {
         index: 0,
         max: 20,
-        move:"right"
+        move:"None"
       };
       this.incrementIndex = this.incrementIndex.bind(this);
       this.decrementIndex = this.decrementIndex.bind(this);
