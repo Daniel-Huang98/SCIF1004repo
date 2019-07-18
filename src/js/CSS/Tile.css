@@ -1,15 +1,17 @@
 
-img{
-    height: 60%;
-    width: 60%;
+.Tile img{
+    height: auto;
+    width: auto;
     border-style: solid;
     border-radius: 20px;
+    max-width: 60%;
+    max-height: 60%;
 }
 
-p{ 
+.Tile p{ 
     font-size: 1 rem;
     width: 80%;
-    margin: auto auto;
+    margin: 15px auto;
     text-align: justify;
     overflow: hidden;
     
