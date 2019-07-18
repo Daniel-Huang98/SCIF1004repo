@@ -2,17 +2,20 @@ import React, { Component } from "react";
 import ReactDOM from "react-dom";
 import logo from './logo.svg';
 import './App.css';
-import Top from './Components/Header'
-import Bottom from './Components/Footer'
-import Scubber from './Components/TileScubber'
-import data from './data'
+import Top from './Components/Header';
+import Bottom from './Components/Footer';
+import Scubber from './Components/TileScubber';
+import data from './data';
+
+
 
 class App extends Component{
     constructor(props){
       super(props);
       this.state = {
         index: 0,
-        max: 20
+        max: 20,
+        move:"right"
       };
       this.incrementIndex = this.incrementIndex.bind(this);
       this.decrementIndex = this.decrementIndex.bind(this);
@@ -25,7 +28,7 @@ class App extends Component{
       } else {
         itr++;
       }
-      this.setState({index: itr});
+      this.setState({index: itr,move:"left"});
     }
 
     decrementIndex(){
@@ -35,7 +38,7 @@ class App extends Component{
       } else {
         itr--;
       }
-      this.setState({index: itr});
+      this.setState({index: itr, move:"right"});
     }
 
     componentDidMount(){
@@ -43,11 +46,11 @@ class App extends Component{
     }
 
     render(){
-        var obj = data[this.state.index]
+        var obj = data[this.state.index];
         return (
             <div className="App">
               <Top/>
-              <Scubber data={obj} decrementIndex={this.decrementIndex} incrementIndex={this.incrementIndex}/>
+              <Scubber index={this.state.index} move={this.state.move} data={data} decrementIndex={this.decrementIndex} incrementIndex={this.incrementIndex}/>
               <Bottom/>
             </div>
           );
