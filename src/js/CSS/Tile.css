@@ -17,7 +17,7 @@
     
 }
 
-header{
+.header{
     color: black
 }
 
@@ -26,11 +26,13 @@ header{
     width: 200px;
     background-color: salmon;
     border-radius: 10px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    
 }
 
-.select h1{
-  margin: auto auto;
-}
+
 
 .Tile{
     width: 95%;
@@ -68,11 +70,8 @@ header{
 }
 
 .buttonPanel{
-    width: 30%;
-    height: 30%;
-    border-style: solid;
-    border-width: 10px;
-    border-color: black;
+    width: 40%;
+    height: 40%;
     margin: auto auto;
     display: flex;
     align-items: center;
