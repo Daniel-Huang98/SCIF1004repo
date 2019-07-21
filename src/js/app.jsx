@@ -15,10 +15,14 @@ class App extends Component{
       this.state = {
         index: 0,
         max: 20,
-        move:"None"
+        move:"None",
+        reveal: 0,
+        answer: "false"
       };
       this.incrementIndex = this.incrementIndex.bind(this);
       this.decrementIndex = this.decrementIndex.bind(this);
+      this.revealInfoTrue = this.revealInfoTrue.bind(this);
+      this.revealInfoFalse = this.revealInfoFalse.bind(this);
     }
 
     incrementIndex(){
@@ -28,7 +32,7 @@ class App extends Component{
       } else {
         itr++;
       }
-      this.setState({index: itr,move:"left"});
+      this.setState({index: itr,move:"left", reveal: 0});
     }
 
     decrementIndex(){
@@ -38,8 +42,17 @@ class App extends Component{
       } else {
         itr--;
       }
-      this.setState({index: itr, move:"right"});
+      this.setState({index: itr, move:"right", reveal: 0});
     }
+
+    revealInfoTrue(){
+      this.setState({reveal: 1, answer:"True"});
+    }
+
+    revealInfoFalse(){
+      this.setState({reveal: 1, answer:"False"});
+    }
+
 
     componentDidMount(){
       this.state.max = data.length-1;
@@ -50,7 +63,7 @@ class App extends Component{
         return (
             <div className="App">
               <Top/>
-              <Scubber index={this.state.index} move={this.state.move} data={data} decrementIndex={this.decrementIndex} incrementIndex={this.incrementIndex}/>
+              <Scubber index={this.state.index} move={this.state.move} data={data} decrementIndex={this.decrementIndex} incrementIndex={this.incrementIndex} revealInfoTrue={this.revealInfoTrue} revealInfoFalse={this.revealInfoFalse} reveal={this.state.reveal} choice={this.state.answer}/>
               <Bottom/>
             </div>
           );

@@ -10,16 +10,18 @@ class Scrubber extends React.Component{
         var discussion;
         var tiles = [];
         var disp;
+        var answer;
         for(var itr = 0; itr < this.props.data.length; itr++){
             caption = this.props.data[itr].caption;
             img = this.props.data[itr].meme;
             discussion = this.props.data[itr].discussion;
+            answer = this.props.data[itr].answer;
             if(itr == this.props.index){
                 disp = "block";
             }else{
                 disp = "none";
             }
-            tiles.push(<Tile hidden={disp} move={this.props.move} caption={caption} meme={img} discussion={discussion} />)
+            tiles.push(<Tile hidden={disp} move={this.props.move} caption={caption} meme={img} discussion={discussion} revealInfoFalse={this.props.revealInfoFalse} revealInfoTrue={this.props.revealInfoTrue} reveal={this.props.reveal} answer={answer} choice={this.props.choice}/>)
         }
         return(
             <div id="Scrubber">
