@@ -55,7 +55,7 @@ class App extends Component{
 
 
     componentDidMount(){
-      this.state.max = data.length-1;
+      this.state.max = data.length;
     }
 
     render(){

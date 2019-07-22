@@ -22,10 +22,10 @@ class Tile extends React.Component{
                     <h1 id="fact">{this.props.caption}</h1>
                     <div className="buttonPanel">
                         <div onClick={this.props.revealInfoTrue} className="select">
-                            <h1>True</h1>
+                            <h1>Accurate</h1>
                         </div>
                         <div onClick={this.props.revealInfoFalse} className="select">
-                            <h1>False</h1>
+                            <h1>Inaccurate</h1>
                         </div>
                     </div>
                 </div>
