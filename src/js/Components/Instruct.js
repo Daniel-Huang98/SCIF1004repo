@@ -6,7 +6,7 @@ class Instruct extends React.Component{
         return(
             <div className="Instruct" style={{display: this.props.hidden}}>
                 <h1>Some instructions</h1>
-                <p>         Eat DIck         </p>
+                <p>Insert Some Instructions</p>
                    
 
             </div>
