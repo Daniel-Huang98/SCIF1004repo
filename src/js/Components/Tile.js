@@ -10,8 +10,8 @@ class Tile extends React.Component{
             }
             return(
                 <div style={{display:this.props.hidden}} className={[this.props.move, "Tile"].join(" ")}>
-                    <h1>{result}</h1>
-                    <h2>Answer: {this.props.answer}</h2>
+                    <h1>{this.props.caption}</h1>
+                    <h2>Result: {result}</h2>
                     <img src={this.props.meme}></img>
                     <p>{this.props.discussion}</p>
                 </div>
@@ -20,14 +20,17 @@ class Tile extends React.Component{
             return(
                 <div style={{display:this.props.hidden}} className={[this.props.move, "Question"].join(" ")}>
                     <h1 id="fact">{this.props.caption}</h1>
+                    <h5 className="information">{this.props.question}</h5>
+                    <h5 className="followup">{this.props.followup}</h5>
                     <div className="buttonPanel">
                         <div onClick={this.props.revealInfoTrue} className="select">
-                            <h1>Accurate</h1>
+                            <h1>Yes</h1>
                         </div>
                         <div onClick={this.props.revealInfoFalse} className="select">
-                            <h1>Inaccurate</h1>
+                            <h1>No</h1>
                         </div>
                     </div>
+                    <p>{this.props.number}</p>
                 </div>
             )
         }

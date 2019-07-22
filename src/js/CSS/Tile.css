@@ -23,7 +23,7 @@
 
 .select{
     height: 100px;
-    width: 200px;
+    min-width: 200px;
     background-color: salmon;
     border-radius: 10px;
     display:flex;
@@ -32,6 +32,11 @@
     margin: 0 10px;
 }
 
+.select:hover{
+  opacity: 1;
+  color: grey;
+  cursor: pointer;
+}
 
 
 .Tile{
@@ -65,8 +70,18 @@
 }
 
 .Question #fact{
-  width: 20%;
   margin: 50px auto;
+}
+
+.Question .information {
+    text-align: center;
+    width: 80%;
+    margin: auto auto;
+}
+
+.Question .followup{
+  margin: 10px auto;
+  font-weight:bold;
 }
 
 .buttonPanel{
