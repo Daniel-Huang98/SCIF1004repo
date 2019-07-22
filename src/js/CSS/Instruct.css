@@ -11,4 +11,15 @@
     grid-column-start: 2;
     grid-column-end: 3;
     overflow: auto;
+    animation: 0.75s ease-out 0s 1 slideInFromAbove;
 }
+
+
+@keyframes slideInFromAbove{
+    0% {
+      transform: translateY(-200%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }

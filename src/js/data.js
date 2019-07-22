@@ -26,7 +26,7 @@ var data = [
     },
     {
         caption: "Epidemiology",
-        question:"In the movie 'Contagion',  Dr. Leonora Orantes, a WHO epidemiologist was sent to Hong Kong to trace the source of the MEV-1 virus.",
+        question:"In the movie 'Contagion',  Dr. Leonora Orantes, a WHO epidemiologist, was sent to Hong Kong to trace the source of the MEV-1 virus.",
         followup:"Is this an accurate depiction of what an epidemiologist does?",
         meme: require("./Images/Meme4.jpg"),
         answer: "False",
