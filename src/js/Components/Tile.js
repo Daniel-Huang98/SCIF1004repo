@@ -3,7 +3,7 @@ import './../CSS/Tile.css'
 
 class Tile extends React.Component{
     render(){
-        if(this.props.reveal == 0){ //change back to 1
+        if(this.props.reveal == 1){ //change back to 1
             var result = "WRONG";
             if(this.props.choice==this.props.answer){
                 result = "CORRECT";
