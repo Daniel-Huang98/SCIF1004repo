@@ -14,7 +14,7 @@ class Scrubber extends React.Component{
         var answer;
         var question;
         var followup;
-        tiles.push(<Instruct hidden={this.props.index==0?"block":"none"}/> );
+        tiles.push(<Instruct index={this.props.index} max={this.props.max} hidden={(this.props.index==0 || this.props.index==this.props.max)?"block":"none"}/> );
         for(var itr = 0; itr < this.props.data.length; itr++){
             caption = this.props.data[itr].caption;
             img = this.props.data[itr].meme;
@@ -31,9 +31,9 @@ class Scrubber extends React.Component{
         }
         return(
             <div id="Scrubber">
-                <Button onclick={this.props.decrementIndex} start={1} end={2} image={require('./../Images/LeftArrow.png')}/>
+                <Button hidden={this.props.index>0?"block":"none"} onclick={this.props.decrementIndex} start={1} end={2} image={require('./../Images/LeftArrow.png')}/>
                 {tiles}
-                <Button onclick={this.props.incrementIndex} start={3} end={4} image={require('./../Images/RightArrow.png')}/>
+                <Button hidden={"block"} onclick={this.props.incrementIndex} start={3} end={4} image={require('./../Images/RightArrow.png')}/>
             </div>
         );
     }

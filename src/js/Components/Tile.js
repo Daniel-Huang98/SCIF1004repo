@@ -3,7 +3,7 @@ import './../CSS/Tile.css'
 
 class Tile extends React.Component{
     render(){
-        if(this.props.reveal == 1){
+        if(this.props.reveal == 0){ //change back to 1
             var result = "WRONG";
             if(this.props.choice==this.props.answer){
                 result = "CORRECT";
@@ -12,7 +12,11 @@ class Tile extends React.Component{
                 <div style={{display:this.props.hidden}} className={[this.props.move, "Tile"].join(" ")}>
                     <h1>{this.props.caption}</h1>
                     <h2>Result: {result}</h2>
-                    <img src={this.props.meme}></img>
+                    <figure>
+                        <img src={this.props.meme}></img>
+                        <figcaption>Fig.{this.props.number} placeholder</figcaption>
+                    </figure>
+                    
                     <p>{this.props.discussion}</p>
                 </div>
             );

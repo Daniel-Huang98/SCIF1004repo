@@ -55,7 +55,7 @@ class App extends Component{
 
 
     componentDidMount(){
-      this.state.max = data.length;
+      this.state.max = data.length+1;
     }
 
     render(){
@@ -63,7 +63,7 @@ class App extends Component{
         return (
             <div className="App">
               <Top/>
-              <Scubber index={this.state.index} move={this.state.move} data={data} decrementIndex={this.decrementIndex} incrementIndex={this.incrementIndex} revealInfoTrue={this.revealInfoTrue} revealInfoFalse={this.revealInfoFalse} reveal={this.state.reveal} choice={this.state.answer}/>
+              <Scubber index={this.state.index} max={this.state.max} move={this.state.move} data={data} decrementIndex={this.decrementIndex} incrementIndex={this.incrementIndex} revealInfoTrue={this.revealInfoTrue} revealInfoFalse={this.revealInfoFalse} reveal={this.state.reveal} choice={this.state.answer}/>
               <Bottom/>
             </div>
           );
