@@ -14,6 +14,10 @@
     animation: 0.75s ease-out 0s 1 slideInFromAbove;
 }
 
+.Instruct h2{
+  margin-top: 10px;
+}
+
 .microbe{
   max-height: 200px;
   max-width: 200px;
