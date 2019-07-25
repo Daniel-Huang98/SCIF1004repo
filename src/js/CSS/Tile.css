@@ -139,6 +139,7 @@ figure {
 
 .ReferenceButton:hover{
   opacity: 0.8;
+  cursor: pointer;
 }
 
 @keyframes slideInFromLeft {

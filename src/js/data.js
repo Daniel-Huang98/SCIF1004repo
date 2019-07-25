@@ -28,7 +28,7 @@ var data = [
     },
     {
         caption: "R-Naught",
-        question:"In the movie Contagion, the scientists used the R-naught number to predict the spread of the disease (figure 3).",
+        question:"In the movie Contagion, the scientists used the R-naught number to predict the spread of the disease.",
         followup:"Is this an accurate use of the R-naught number?",
         meme: require("./Images/R0.gif"),
         answer: "True",
