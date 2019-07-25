@@ -17,12 +17,15 @@ class App extends Component{
         max: 20,
         move:"None",
         reveal: 0,
-        answer: "false"
+        answer: "false",
+        refer: 0
       };
       this.incrementIndex = this.incrementIndex.bind(this);
       this.decrementIndex = this.decrementIndex.bind(this);
       this.revealInfoTrue = this.revealInfoTrue.bind(this);
       this.revealInfoFalse = this.revealInfoFalse.bind(this);
+      this.turnOffRefer = this.turnOffRefer.bind(this);
+      this.turnOnRefer = this.turnOnRefer.bind(this);
     }
 
     incrementIndex(){
@@ -58,12 +61,22 @@ class App extends Component{
       this.state.max = data.length+1;
     }
 
+    turnOnRefer(){
+      console.log('run refer')
+      this.setState({refer: 1});
+    }
+
+    turnOffRefer(){
+      console.log('run off refer')
+      this.setState({refer: 0});
+    }
+
     render(){
         var obj = data[this.state.index];
         return (
             <div className="App">
               <Top/>
-              <Scubber index={this.state.index} max={this.state.max} move={this.state.move} data={data} decrementIndex={this.decrementIndex} incrementIndex={this.incrementIndex} revealInfoTrue={this.revealInfoTrue} revealInfoFalse={this.revealInfoFalse} reveal={this.state.reveal} choice={this.state.answer}/>
+              <Scubber index={this.state.index} refer={this.state.refer} max={this.state.max} move={this.state.move} data={data} decrementIndex={this.decrementIndex} incrementIndex={this.incrementIndex} revealInfoTrue={this.revealInfoTrue} revealInfoFalse={this.revealInfoFalse} reveal={this.state.reveal} choice={this.state.answer} turnOnRefer={this.turnOnRefer} turnOffRefer={this.turnOffRefer}/>
               <Bottom/>
             </div>
           );
