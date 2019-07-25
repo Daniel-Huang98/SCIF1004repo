@@ -16,7 +16,7 @@ class Tile extends React.Component{
                         <h2>Result: {result}</h2>
                         <figure>
                             <img src={this.props.meme}></img>
-                            <figcaption>Fig.{this.props.number} placeholder</figcaption>
+                            <figcaption>Figure {this.props.number}. {this.props.imgcaption}</figcaption>
                         </figure>
                         
                         <p>{this.props.discussion}</p>

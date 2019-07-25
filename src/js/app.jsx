@@ -35,7 +35,7 @@ class App extends Component{
       } else {
         itr++;
       }
-      this.setState({index: itr,move:"left", reveal: 0});
+      this.setState({index: itr,move:"left", reveal: 0, refer: 0});
     }
 
     decrementIndex(){
@@ -45,7 +45,7 @@ class App extends Component{
       } else {
         itr--;
       }
-      this.setState({index: itr, move:"right", reveal: 0});
+      this.setState({index: itr, move:"right", reveal: 0, refer: 0});
     }
 
     revealInfoTrue(){

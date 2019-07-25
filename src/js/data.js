@@ -1,65 +1,70 @@
 var data = [
     {
         caption: "Fomites",
-        question:"In the movie Contagion, Dr Mears mentions the potential for MEV-1 to be transmitted via fomites which refers to transmission from surfaces. The movie also emphasises on fomites by highlighting infected individual touching various surfaces around them.",
+        question:"In the Movie Contagion, Dr. Mears mentions the potential for MEV-1 to be transmitted via fomites which refers to transmission from surfaces. The movie also emphasises on fomites by highlighting infected individual touching various surfaces around them.",
         followup:"Is the movie's depiction of disease transmission accurate?",
         meme: require("./Images/fomite.jpg"),
         answer: "True",
-        discussion:"A highlight about the movie is its accurate portrayal of how diseases are transmitted between hosts. In epidemiology, a fomite is any inanimate object that, when contaminated with infectious agents, act as a vehicle for disease transmission [1]. Fomites become contaminated with viruses by direct contact with body secretion or fluids or contact with an airborne virus [2]. Once contaminated, the transfer of an infectious virus occurs through contact between a fomite and an animate object [2].",
+        discussion:"A highlight about the movie is its accurate portrayal of how diseases are transmitted between hosts. In epidemiology, a fomite is an inanimate object that, when contaminated with infectious agents, act as a vehicle for disease transmission [1]. Fomites become contaminated with viruses by direct contact with body secretion or fluids or contact with an airborne virus [2]. Once contaminated, the transfer of an infectious virus occurs through contact between a fomite and an animate object [2]. For humans, examples of fomites are everyday items such as doorknobs, phones, light switches, and handrails. As seen in figure 1, household items can be contaminated by an infected. A non-infected then picks up the pathogen and can be infected when they touch their nose or eyes and the cycle continues [3].",
         reference:[
             "[1] En.wikipedia.org. (2019). Fomite. [online] Available at: https://en.wikipedia.org/wiki/Fomite [Accessed 25 Jul. 2019].",
             "[2] Boone, S. and Gerba, C. (2007). Significance of Fomites in the Spread of Respiratory and Enteric Viral Disease. [online] National Center for Biotechnology Information Search database. Available at: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1828811/ [Accessed 25 Jul. 2019].",
             "[3] Gerba, C. and Pepper, I. (2015). Domestic and Indoor Microbiology. [online] ScienceDirect. Available at: https://www.sciencedirect.com/science/article/pii/B9780123946263000302 [Accessed 25 Jul. 2019].",
-        ]
+        ],
+        imgcaption:"How fomites carry and transfer disease [3]"
     },
     {
         caption: "MEV-1",
-        question:"In the movie Contagion, MEV-1 is a deadly disease that originated from a bat and then a pig.",
+        question:"In the movie, MEV-1 is a deadly disease that originated from a bat and then a pig.",
         followup:"Is 'MEV-1' a real virus?",
         meme: require("./Images/nipah.png"),
         answer: "False",
-        discussion:"Thankfully, the MEV-1 virus is fictional. Otherwise, the world would be in a state of emergency. However, the MEV-1 virus was inspired by real viruses such as the Nipah virus. The Nipah virus is a zoonotic virus known to be transmitted from infected pigs via pig tissue and infected fruit bats via saliva and urine on fruit and fruit produce [3]. These as some very obvious parallels that can be drawn between MEV-1 and the Nipah virus.",
+        discussion: "Thankfully, the MEV-1 virus is fictional. Otherwise, the world would be in a state of emergency. However, the MEV-1 virus was inspired by real viruses such as the Nipah virus. The Nipah virus is a zoonotic virus known to be transmitted from infected pigs infected fruit bats [1]. Human infection symptoms range from asymptomatic infection to acute respiratory infection and fatal encephalitis. In a severe case, seizure also can occur [1]. As seen in figure 2, the Nipah virus is transmitted through contact with infected pigs or consuming fruit that has been contacted by infected bats. The virus is then transmitted between people through close contact. These as some very obvious parallels that can be drawn between MEV-1 and the Nipah virus.",
         reference:[
             "[1] World Health Organization. (2019). Nipah virus infection. [online] Available at: https://www.who.int/csr/disease/nipah/en/ [Accessed 25 Jul. 2019].",
             "[2] Kumar, D. (2018). Nipah Virus (NiV): Prevention, Treatment, Medicine and Solutions. [online] Medium. Available at: https://medium.com/@dilipkumark/nipah-virus-niv-prevention-treatment-medicine-and-solutions-c088091b7861 [Accessed 25 Jul. 2019].",
-        ]
+        ],
+        imgcaption:"How the Nipah Virus is spread [2]"
     },
     {
         caption: "R-Naught",
-        question:"In the movie Contagion, the scientists used the R-naught number to predict the spread of the disease.",
+        question:"In the movie Contagion, the scientists used the R-naught number to predict the spread of the disease (figure 3).",
         followup:"Is this an accurate use of the R-naught number?",
         meme: require("./Images/R0.gif"),
         answer: "True",
-        discussion:"The R-naught, in epidemiology, is the basic reproduction number. It refers to the basic reproduction rate of an infection; the number of new cases generated by one case [4].  The r-naught is affected by several factors; the rate of contacts in the host populations, the probability of infection transmission during contact and the duration of the infectiousness [5].  it is used to estimate the spread in a susceptible population. For example, the R-naught of ebola is 2 and the R-naught of HIV is 4 [5].",
+        discussion: "The R-naught, in epidemiology, is the basic reproduction number. It refers to the basic reproduction rate of a disease; the number of new cases generated by one case [1].  The r-naught is affected by several factors; the rate of contacts in the host populations, the probability of infection transmission during contact and the duration of the infectiousness [2].  it is used to estimate the spread in a susceptible population. For example, the R-naught of Ebola is 2 and the R-naught of HIV is 4 [2].",
         reference:[
             "[1] En.wikipedia.org. (2019). Basic reproduction number. [online] Available at: https://en.wikipedia.org/wiki/Basic_reproduction_number [Accessed 25 Jul. 2019].",
             "[2] Ramirez, V. (2016). What Is R0? Gauging Contagious Infections. [online] Healthline. Available at: https://www.healthline.com/health/r-nought-reproduction-number#conditions [Accessed 25 Jul. 2019].",
             "[3] Contagion. (2019). [film] Directed by S. Soderbergh. Hollywood: Participant Media.",
-        ]    
+        ],    
+        imgcaption:"Dr. Mears analyses R-Naught of MEV-1 [3]"
     },
     {
         caption: "Epidemiology",
-        question:"In the movie 'Contagion',  Dr. Leonora Orantes, a WHO epidemiologist, was sent to Hong Kong to trace the source of the MEV-1 virus.",
+        question: "In the movie Contagion,  Dr. Leonora Orantes, a WHO epidemiologist, was sent to Hong Kong to trace the source of the MEV-1 virus.",
         followup:"Is this an accurate depiction of what an epidemiologist would do?",
         meme: require("./Images/epidemilogist.gif"),
         answer: "True",
-        discussion:"In the world of public health, epidemiologists study diseases within populations of people. These scientists analyse the cause of a disease outbreak in order to treat the disease and prevent future outbreaks [6]. Outbreak investigation, observational studies and risk identification allow for the implementation of disease control measures [7] such as quarantine and treatment [8].",
+        discussion: "In the world of public health, epidemiologists study diseases within populations of people. These scientists analyse the cause of a disease outbreak to treat the disease and prevent future outbreaks. Similar to what Dr. Orantes was doing in the film, as seen in figure 4, duties of epidemiologists revolve around gathering medical and health information from the field which can be used to develop public health initiatives or discover how the disease originated and spread.  Epidemiologists are typically employed by universities or government organisations such as the Centres for Disease Control [1].",
         reference:[
             "[1] Schwartz, D. (2019). Epidemiology Careers | PublicHealth.org. [online] Public Health. Available at: https://www.publichealthonline.org/epidemiology/ [Accessed 25 Jul. 2019].",
             "[2] Contagion. (2019). [film] Directed by S. Soderbergh. Hollywood: Participant Media."
-        ]
+        ],
+        imgcaption:"Dr. Orantes on a field study in Hong Kong for MEV-1 [2]"
     },
     {
         caption: "Vaccine",
-        question:"In the movie 'Contagion', a vaccine was discovered by Dr. Hextall and mass produced within months of the first outbreak of 'MEV-1'.",
+        question: "In the movie 'Contagion', a vaccine was discovered by Dr. Hextall and mass-produced within months of the first outbreak of 'MEV-1'.",
         followup:"Is this speed of vaccine development feasible in the modern day (2019)?",
         meme: require("./Images/vaccine.gif"),
         answer: "False",
-        discussion:"For the development of the vaccine for MEV-1, it appears that the film took the Hollywood approach and took the route of convenience. In the real world, vaccines usually take between 10 to 15 years to develop. This is because vaccines go through many phases of development including research, discovery, pre-clinical testing and clinical testing before regulatory approval with the approval process taking another lengthy two years. Once approved, the vaccine is then manufactured and shipped to where it is needed [9].",
+        discussion: "For the development of the vaccine for MEV-1, it appears that the film took the Hollywood approach and took the route of convenience. In the real world, vaccines usually take between 10 to 15 years to develop. This is because vaccines go through many phases of development including research, discovery, pre-clinical testing and clinical testing before regulatory approval with the approval process taking another lengthy two years. Once approved, the vaccine is then manufactured and shipped to where it is needed [1].",
         reference:[
             "[1] Betterhealth.vic.gov.au. (2019). Vaccines. [online] Available at: https://www.betterhealth.vic.gov.au/health/healthyliving/vaccines [Accessed 25 Jul. 2019].",
             "[2] Contagion. (2019). [film] Directed by S. Soderbergh. Hollywood: Participant Media.",
-        ]
+        ],
+        imgcaption:"Dr. Hextall discovers vaccine for MEV-1 [2]"
     },
     {
         caption: "Zoonotic Diseases",
@@ -67,25 +72,27 @@ var data = [
         followup:"Is this feasible in the real world?",
         meme: require("./Images/zoonotic.png"),
         answer: "False",
-        discussion:"This was indeed a trick question. Capuchin monkeys are native to South America [10]. Hence, it would be very unlikely for a capuchin monkey to be infected and act as transport for a disease originating in central Africa. The Motaba virus, though fictional, is an excellent example of a zoonotic disease. Zoonotic diseases are diseases spread between animals and humans. Diseases like Ebola and salmonellosis are examples of non-fictional zoonotic diseases [20].",
+        discussion: "This was indeed a trick question. Capuchin monkeys are native to South America [1]. Hence, it would be very unlikely for a capuchin monkey to be infected and act as transport for a disease originating in central Africa. The Motaba virus, though fictional, is an excellent example of zoonotic disease. Zoonotic diseases are diseases spread between animals and humans. As seen in figure 6, zoonotic diseases a commonly transferred through direct contact, vectors or consuming infected foods. Diseases like Ebola and salmonellosis are examples of non-fictional zoonotic diseases [2].",
         reference:[
             "[1] En.wikipedia.org. (2019). White-faced capuchin. [online] Available at: https://en.wikipedia.org/wiki/White-faced_capuchin [Accessed 25 Jul. 2019].",
             "[2] En.wikipedia.org. (2019). Zoonosis. [online] Available at: https://en.wikipedia.org/wiki/Zoonosis [Accessed 25 Jul. 2019].",
             "[3] Thornton, J. (2017). Where humans and animals collide: Emerging infections and newfound resistance | LSHTM. [online] LSHTM. Available at: https://www.lshtm.ac.uk/research/research-action/features/where-humans-and-animals-collide-emerging-infections-and-newfound [Accessed 25 Jul. 2019].",
-        ]
+        ],
+        imgcaption:"How zoonotic diseases are transmitted [3]"
     },
     {
         caption: "Motaba Virus",
-        question:"In the movie, Outbreak, the Motaba virus is a haemorrhagic virus which has a 100% mortality rate.",
+        question:"In the movie, Outbreak, the Motaba virus is a hemorrhagic virus which has a 100% mortality rate.",
         followup:"Is the Motaba virus a real virus?",
         meme: require("./Images/ebola.jpg"),
         answer: "False",
-        discussion:"Thankfully, like MEV-1, the Motaba virus is fictional. However, the Motaba virus is based on the ebola virus which is also a haemorrhagic virus [13]. Even the microscope image of the Motaba virus in the film is actually just the ebola virus.  However, the ebola virus only has a mortality of approximately 50% [13].  Interestingly, around the time of the movie's release in 1995, Zaire was experiencing an ebola outbreak [14].",
+        discussion: "Thankfully, like MEV-1, the Motaba virus is fictional. However, the Motaba virus is based on the Ebola virus which is also a hemorrhagic virus [1]. Even the microscope image of the Motaba virus in the film is just the Ebola virus as seen in figure 7.  However, the Ebola virus only has a mortality of approximately 50% [1].  Interestingly, around the time of the movie's release in 1995, Zaire was experiencing an Ebola outbreak [2].",
         reference:[
             "[1] WHO | Regional Office for Africa. (2019). Ebola Virus Disease. [online] Available at: https://www.afro.who.int/health-topics/ebola-virus-disease [Accessed 25 Jul. 2019].",
             "[2] Cdc.gov. (1995). Update: Outbreak of Ebola Viral Hemorrhagic Fever -- Zaire, 1995. [online] Available at: https://www.cdc.gov/mmwr/preview/mmwrhtml/00037149.htm [Accessed 25 Jul. 2019].",
             "[3] Ebola Virus vs Fictional Motaba. (2019). [image] Available at: https://www.pinterest.ca/pin/430586414347485344 [Accessed 25 Jul. 2019].",
-        ]
+        ],
+        imgcaption:"Image of Ebola vs Motaba Virus from film [3]"
     },
     {
         caption: "Anti-serum",
@@ -93,13 +100,14 @@ var data = [
         followup:"Is this possible in modern day medicine?",
         meme: require("./Images/antiserum.jpg"),
         answer: "False",
-        discussion:"Anti-serum is blood serum containing antibodies that is used to spread passive immunity [15]. A common use case for anti-serum is the treatment of envenomation in humans. Anti-serum is currently used to treat Ebola with a low success rate [16]. The production of some anti-serum is produced by animals such as horses[15]. Anti-serum production requires blood withdrawal [17]. Hence, it is impossible for a small monkey to produce enough anti-serum for an entire town of people in a single day.",
+        discussion: "Anti-serum is blood serum containing antibodies that are used to spread passive immunity [1]. A common use case for anti-serum is the treatment of envenomation in humans. Anti-serum is currently used to treat Ebola with a low success rate [2]. As seen in figure 8, the production of some anti-serum is produced by animals such as rabbits or horses [1]. Anti-serum production requires blood withdrawal [3]. Hence, it is impossible for a small monkey to produce enough anti-serum for an entire town of people in a single day.",
         reference:[
             "[1] En.wikipedia.org. (2019). Antiserum. [online] Available at: https://en.wikipedia.org/wiki/Antiserum [Accessed 25 Jul. 2019].",
             "[2] Morais, V. (2016). An Old Solution for a New Problem: Antiserum against Emerging Infectious Diseases. [online] National Center for Biotechnology Information. Available at: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5000394/ [Accessed 25 Jul. 2019].",
             "[3] Www-users.med.cornell.edu. (n.d.). Making and using antibodies. [online] Available at: http://www-users.med.cornell.edu/~jawagne/Antibody_Approaches.html [Accessed 25 Jul. 2019].",
             "[4] Anon, (n.d.). [image] Available at: https://courses.lumenlearning.com/microbiology/chapter/polyclonal-and-monoclonal-antibody-production/ [Accessed 25 Jul. 2019].",
-        ]
+        ],
+        imgcaption:"Production of Anti-serum using rabbits [4]"
     },
     {
         caption: "Mutations", 
@@ -107,12 +115,13 @@ var data = [
         followup:"Is this mutation possible in viruses?",
         meme: require("./Images/mutate.gif"),
         answer: "True",
-        discussion:"Viral evolution occurs constantly and it is how mutations occur in influenza viruses and human immunodeficiency viruses occur. Influenza and HIV are RNA viruses. RNA viruses are encoded in RNA. Unlike DNA viruses, RNA viruses do not have a 'proofreading' step in its replication and will often have mistakes and thus will mutate very frequently [18]. This gives RNA viruses evolutionary advantages meaning it is possible for viruses to mutate into a strain that can remain suspended in the air (I.e. airborne) [19].",
+        discussion: "Viral evolution occurs constantly and it is how mutations occur in influenza viruses and human immunodeficiency viruses occur. Influenza and HIV are RNA viruses. RNA viruses are encoded in RNA. Unlike DNA viruses, RNA viruses do not have a 'proofreading' step in its replication and will often have mistakes and thus will mutate very frequently [1]. This gives RNA viruses evolutionary advantages meaning it is possible for viruses to mutate into a strain that can remain suspended in the air (I.e. airborne) [2].",
         reference:[
             "[1] Historyofvaccines.org. (2018). Viruses and Evolution | History of Vaccines. [online] Available at: https://www.historyofvaccines.org/content/articles/viruses-and-evolution [Accessed 25 Jul. 2019].",
             "[2] Timpona, J. (2014). Understanding Ebola Fears & Viral Mutations - Science in the News. [online] Science in the News. Available at: http://sitn.hms.harvard.edu/flash/special-edition-on-infectious-disease/2014/understanding-ebola-viral-mutations/ [Accessed 25 Jul. 2019].",
             "[3] Outbreak. (2019). [film] Directed by W. Petersen. Hollywood: Punch Productions.",
-        ]
+        ],
+        imgcaption:"Motaba virus mutates [3]"
     }
 ]
 
