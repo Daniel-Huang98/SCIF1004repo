@@ -72,7 +72,7 @@ var data = [
         followup:"Is this feasible in the real world?",
         meme: require("./Images/zoonotic.png"),
         answer: "False",
-        discussion: "This was indeed a trick question. Capuchin monkeys are native to South America [1]. Hence, it would be very unlikely for a capuchin monkey to be infected and act as transport for a disease originating in central Africa. The Motaba virus, though fictional, is an excellent example of zoonotic disease. Zoonotic diseases are diseases spread between animals and humans. As seen in figure 6, zoonotic diseases a commonly transferred through direct contact, vectors or consuming infected foods. Diseases like Ebola and salmonellosis are examples of non-fictional zoonotic diseases [2].",
+        discussion: "This was indeed a trick question. Capuchin monkeys are native to South America [1]. Hence, it would be very unlikely for a capuchin monkey to be infected and act as transport for a disease originating in central Africa. The Motaba virus, though fictional, is an excellent example of zoonotic disease. Zoonotic diseases are diseases spread between animals and humans. As seen in figure 6, zoonotic diseases are commonly transferred through direct contact, vectors or consuming infected foods. Diseases like Ebola and salmonellosis are examples of non-fictional zoonotic diseases [2].",
         reference:[
             "[1] En.wikipedia.org. (2019). White-faced capuchin. [online] Available at: https://en.wikipedia.org/wiki/White-faced_capuchin [Accessed 25 Jul. 2019].",
             "[2] En.wikipedia.org. (2019). Zoonosis. [online] Available at: https://en.wikipedia.org/wiki/Zoonosis [Accessed 25 Jul. 2019].",
